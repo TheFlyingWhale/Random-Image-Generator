@@ -10,10 +10,9 @@ export const GlobalStyle = createGlobalStyle`
 
 export const AppContainer = styled.div`
     height: 100%;
-    
-    background-color: blue;
-`;
 
-export const Title = styled.h1`
-    color: orange;
+    display: grid;
+    grid-template-columns: 300px auto;
+
+    background-color: pink;
 `;
