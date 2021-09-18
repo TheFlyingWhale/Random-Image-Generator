@@ -7,14 +7,23 @@ import { OutputPanel } from '../components/OutputPanel/outputPanel';
 //Style imports
 import { GlobalStyle, AppContainer } from './AppStyles';
 
+import { linkHandler } from '../functions/linkHandler';
+
 
 function App() {
-  const [seed, setSeed] = useState(100);
+  const [seed, setSeed] = useState("");
   const [width, setWidth] = useState(200);
   const [height, setHeight] = useState(300);
   const [blur, setBlur] = useState(0);
   const [grayScale, setGrayScale] = useState(false);
 
+  const link = linkHandler(seed, width, height, parseInt(blur), grayScale);
+
+  console.log(link);
+
+  const imageUrl = link;
+
+  /*
   const effects = (b, g) => {
     let result = "";
     const blurEffect = b;
@@ -45,13 +54,13 @@ function App() {
       }else{
         result = `?grayscale&blur=${blur}`;
       }
-    }*/
+    }
 
     console.log(`Result: ${result}`);
     return result;
-  }
+  }*/
 
-  const imageUrl = `https://picsum.photos/seed/${seed}/${width}/${height}${effects(blur, grayScale)}`;
+  //const imageUrl = `https://picsum.photos/seed/${seed}/${width}/${height}${grayScale ? '?grayscale' : ''}`;
 
   return (
       <>
