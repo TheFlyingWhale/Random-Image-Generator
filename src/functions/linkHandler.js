@@ -1,3 +1,5 @@
+//hvis dere leser denne teksen beklager jeg for en fantastisk teit funksjon,
+//enten har jeg glemt å fikse dette eller så er jeg så drit lei problemet med at 'range 0' er truthy
 export const linkHandler = (seed, width, height, blur, grayscale) => {
     let link = "https://picsum.photos";
     let twoEffects = false;
