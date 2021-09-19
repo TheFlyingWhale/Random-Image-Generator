@@ -1,11 +1,19 @@
-import { TextForm } from "../../General/SizeInput/textForm"
+import { TextForm } from "../../General/TextForm/textForm"
+import { PanelTitle } from "../../General/PanelTitle/panelTitle"
+import { LeftFormContainer, RightFormContainer, SizePanelContainer, TitleContainer } from "./sizePanelStyles"
 
 export const SizePanel = props => {
     return(
-        <>
-            <h1>Size</h1>
-            <TextForm name="W" value={props.width} setter={props.setWidth}/>
-            <TextForm name="H" value={props.height} setter={props.setHeight}/>
-        </>
+        <SizePanelContainer>
+            <TitleContainer>
+                <PanelTitle titleText="Size"/>
+            </TitleContainer>
+            <LeftFormContainer>
+                <TextForm name="W" value={props.width} setter={props.setWidth}/>
+            </LeftFormContainer>
+            <RightFormContainer>
+                <TextForm name="H" value={props.height} setter={props.setHeight}/>
+            </RightFormContainer>
+        </SizePanelContainer>
     )
 }
