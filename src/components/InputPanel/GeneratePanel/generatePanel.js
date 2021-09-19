@@ -1,4 +1,4 @@
-import { TextForm } from "../../General/TextForm/textForm"
+import { NumberForm } from "../../General/NumberForm/numberForm"
 import { StyledButton } from "../../General/Button/buttonStyle"
 import { PanelTitle } from "../../General/PanelTitle/panelTitle"
 import { GeneratePanelContainer } from "./generatePanelStyles"
@@ -21,7 +21,7 @@ export const GeneratePanel = props => {
                 New Image
             </StyledButton>
 
-            <TextForm 
+            <NumberForm 
                 name="Seed" 
                 value={props.seed} 
                 setter={props.setSeed}
