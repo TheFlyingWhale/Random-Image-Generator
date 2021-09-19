@@ -12,5 +12,7 @@ export const OutputPanelContainer = styled.div`
 
     display: grid;
 
-    grid-template-rows: 90% 1fr 1fr;
+    grid-template-rows: 95% 1fr;
+
+    justify-items: center;
 `;

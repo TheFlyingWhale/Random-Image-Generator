@@ -1,3 +1,5 @@
+import { FormInput, FromLabel, TextFormContainer } from "./textFormStyles";
+
 export const TextForm = props => {
 
     const handleChange = event => {
@@ -5,13 +7,13 @@ export const TextForm = props => {
     }
 
     return(
-        <form>
-            <label>{props.name ? props.name : null}</label>
-            <input 
+        <TextFormContainer>
+            <FromLabel>{props.name ? props.name : null}</FromLabel>
+            <FormInput 
                 type="text" 
                 value={props.value} 
                 onChange={e => handleChange(e.target.value)}
             />
-        </form>
+        </TextFormContainer>
     )
 }

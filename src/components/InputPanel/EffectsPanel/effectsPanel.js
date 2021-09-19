@@ -1,10 +1,12 @@
 import { GrayScalePanel } from "./GrayScalePanel/grayScalePanel"
 import { BlurPanel } from "./BlurPanel/blurPanel"
+import { PanelTitle } from "../../General/PanelTitle/panelTitle"
+import { EffectPanelContainer } from "./effectsPanelStyles"
 
 export const EffectsPanel = props => {
     return(
-        <>
-            <h1>Effects</h1>
+        <EffectPanelContainer>
+            <PanelTitle titleText="Effects"/>
             <BlurPanel
                 blur={props.blur}
                 setBlur={props.setBlur}
@@ -13,6 +15,6 @@ export const EffectsPanel = props => {
                 grayScale={props.grayScale}
                 setGrayScale={props.setGrayScale}
             />
-        </>
+        </EffectPanelContainer>
     )
 }

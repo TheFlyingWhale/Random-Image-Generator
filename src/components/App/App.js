@@ -6,12 +6,15 @@ import { OutputPanel } from '../OutputPanel/outputPanel';
 
 //Style imports
 import { GlobalStyle, AppContainer } from './AppStyles';
+import { GlobalTextStyles } from '../../styles/text';
 
+//Function imports
 import { linkGenerator } from '../../functions/linkGenerator';
+import { generateRandomSeed } from '../../functions/generateRandomSeed';
 
 
 function App() {
-  const [seed, setSeed] = useState("");
+  const [seed, setSeed] = useState(generateRandomSeed());
   const [width, setWidth] = useState(1000);
   const [height, setHeight] = useState(600);
   const [blur, setBlur] = useState(0);
@@ -22,6 +25,7 @@ function App() {
   return (
       <>
         <GlobalStyle/>
+        <GlobalTextStyles/>
         <AppContainer>
           <InputPanel 
             //States

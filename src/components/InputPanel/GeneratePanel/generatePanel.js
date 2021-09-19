@@ -1,15 +1,31 @@
-import { TextForm } from "../../General/SizeInput/textForm"
+import { TextForm } from "../../General/TextForm/textForm"
+import { StyledButton } from "../../General/Button/buttonStyle"
+import { PanelTitle } from "../../General/PanelTitle/panelTitle"
+import { GeneratePanelContainer } from "./generatePanelStyles"
+import { generateRandomSeed } from "../../../functions/generateRandomSeed"
 
 export const GeneratePanel = props => {
+    const handleClick = () => {
+        props.setSeed(generateRandomSeed());
+    }
+
     return(
-        <>
-            <h1>Generate</h1>
-            <p>Generate button</p>
+        <GeneratePanelContainer>
+            <PanelTitle 
+                titleText="Generate"
+            />
+
+            <StyledButton
+                onClick={handleClick}
+            > 
+                New Image
+            </StyledButton>
+
             <TextForm 
                 name="Seed" 
                 value={props.seed} 
                 setter={props.setSeed}
             />
-        </>
+        </GeneratePanelContainer>
     )
 }

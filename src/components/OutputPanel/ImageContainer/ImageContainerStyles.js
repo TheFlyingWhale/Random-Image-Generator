@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../../styles/colors';
 
 export const StyledImageContainer = styled.div`
     max-width: 100%;
@@ -8,7 +9,7 @@ export const StyledImageContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    background-color: orange;
+    background-color: ${Colors.background.outputBg};
 `;
 
 export const Image = styled.img`
