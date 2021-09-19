@@ -5,7 +5,7 @@ import { Text } from "../../../styles/text";
 export const ImageLinkContainer = styled.div`
     display: grid;
 
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
 `;
 
 export const LinkLabel = styled.p`
