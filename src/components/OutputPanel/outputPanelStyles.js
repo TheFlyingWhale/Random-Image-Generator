@@ -9,4 +9,8 @@ export const OutputPanelContainer = styled.div`
 
     grid-column-start: 2;
     grid-column-end: 3;
+
+    display: grid;
+
+    grid-template-rows: 90% 1fr 1fr;
 `;

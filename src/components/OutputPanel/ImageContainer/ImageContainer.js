@@ -1,7 +1,9 @@
+import { StyledImageContainer, Image } from "./ImageContainerStyles"
+
 export const ImageContainer = props => {
     return(
-        <>
-            <img src={props.imageUrl} alt={"random result"}/>
-        </>
+        <StyledImageContainer>
+            <Image src={props.imageUrl} alt={"random result"}/>
+        </StyledImageContainer>
     )
 }

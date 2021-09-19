@@ -4,7 +4,7 @@ import { BlurPanel } from "./BlurPanel/blurPanel"
 export const EffectsPanel = props => {
     return(
         <>
-            <h1>EffectsPanel Title</h1>
+            <h1>Effects</h1>
             <BlurPanel
                 blur={props.blur}
                 setBlur={props.setBlur}
