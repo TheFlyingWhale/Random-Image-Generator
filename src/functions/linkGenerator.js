@@ -2,7 +2,7 @@
  * Takes input and returns an url.
  * 
  * Checks the values of the different inputs and generates
- * a link that refer to a stylized image in picsums database.
+ * a link that refer to a stylized image in the picsum database.
  * @param {string} seed 
  * @param {string} width 
  * @param {string} height 
