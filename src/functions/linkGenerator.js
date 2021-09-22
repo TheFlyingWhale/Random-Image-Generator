@@ -4,8 +4,8 @@
  * Checks the values of the different inputs and generates
  * a link that refer to a stylized image in the picsum database.
  * @param {string} seed 
- * @param {string} width 
- * @param {string} height 
+ * @param {number} width 
+ * @param {number} height 
  * @param {int} blur 
  * @param {boolean} grayscale 
  * @returns {string} url
